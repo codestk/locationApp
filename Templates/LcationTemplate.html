@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="LcationTemplate.css" rel="stylesheet" />
+     <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfUVPTeTpOMf5au99hfe0F6Mj1I7MJaNc&sensor=false&language=th">
+    </script>
+  
+    <script src="../scripts/jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $('#DivMoreButtom').click(function () {
+
+                    $("#LocationMain").append(" <div class=details> <div class=DivImgGoogle> <img src=../images/LocationTemplate/bbl.png /> </div> <div class=DivName> Amnat Charoen <img src=../images/LocationTemplate/google-map.gif /> </div> <div class=DivAddress> 163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua Wattana Bangkok Thailand 10110 Tel: 0-2260-0546, 0-2260-0548 Fax: 0-2260-0549 </div> <div class=DivOpeningHours>Mon-Fri 8.30-17.30</div> <div class=DivServicesavaliable> <img src=../images/LocationTemplate/atm.gif /><img src=../images/LocationTemplate/Branch.gif /> <img src=../images/LocationTemplate/BualuangExclusive.gif /><img src=../images/LocationTemplate/BusinessCenter.gif /><img src=../images/LocationTemplate/FCDService.gif /><img src=../images/LocationTemplate/FXBooth.gif /> <img src=../images/LocationTemplate/RemittanceService.gif /><img src=../images/LocationTemplate/WesternUnionService.gif /> </div> </div>");
+                    
+                });
+                initialize();
+            });
+
+
+            function initialize() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(15.7971687312711, 104.140266417673),
+                    zoom: 8,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map_canvas"),
+                    mapOptions);
+            }
+        </script>
+</head>
+<body>
+     <div id="map_canvas" style="width:100%; height:500px;"></div>
+    <div id="LocationMain">
+
+        <div class="details FirstRow">
+            <div class="DivImgGoogle FontHead">
+                ธนาคาร
+            </div>
+
+            <div class="DivName FontHead">สาขา</div>
+            <div class="DivAddress FontHead">ที่อยู่</div>
+            <div class="DivOpeningHours FontHead">เวลาเปิดทำการ</div>
+            <div class="DivServicesavaliable FontHead">
+                บริการ
+
+            </div>
+           <div  class="DivDisStance FontHead">ระยะทาง</div>
+        </div>
+        <div class="details">
+            <div class="DivImgGoogle">
+                <img src="../images/LocationTemplate/bbl.png" />
+
+
+            </div>
+
+            <div class="DivName">
+                Amnat Charoen
+                    <img src="../images/LocationTemplate/google-map.gif" />
+            </div>
+            <div class="DivAddress">
+                163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua 
+Wattana Bangkok Thailand 10110 
+Tel: 0-2260-0546, 0-2260-0548
+Fax: 0-2260-0549
+            </div>
+            <div class="DivOpeningHours">Mon-Fri 8.30-17.30</div>
+            <div class="DivServicesavaliable">
+                <img src="../images/LocationTemplate/atm.gif" /><img src="../images/LocationTemplate/Branch.gif" />
+                <img src="../images/LocationTemplate/BualuangExclusive.gif" /><img src="../images/LocationTemplate/BusinessCenter.gif" /><img src="../images/LocationTemplate/FCDService.gif" /><img src="../images/LocationTemplate/FXBooth.gif" />
+                <img src="../images/LocationTemplate/RemittanceService.gif" /><img src="../images/LocationTemplate/WesternUnionService.gif" />
+
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="DivImgGoogle">
+
+                <img src="../images/LocationTemplate/kbank.png" />
+
+            </div>
+
+            <div class="DivName">
+                Amnat Charoen
+                    <img src="../images/LocationTemplate/google-map.gif" />
+            </div>
+            <div class="DivAddress">
+                163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua 
+Wattana Bangkok Thailand 10110 
+Tel: 0-2260-0546, 0-2260-0548
+Fax: 0-2260-0549
+            </div>
+            <div class="DivOpeningHours">Mon-Fri 8.30-17.30</div>
+            <div class="DivServicesavaliable">
+                <img src="../images/LocationTemplate/atm.gif" /><img src="../images/LocationTemplate/Branch.gif" />
+                <img src="../images/LocationTemplate/BualuangExclusive.gif" /><img src="../images/LocationTemplate/BusinessCenter.gif" /><img src="../images/LocationTemplate/FCDService.gif" /><img src="../images/LocationTemplate/FXBooth.gif" />
+                <img src="../images/LocationTemplate/RemittanceService.gif" /><img src="../images/LocationTemplate/WesternUnionService.gif" />
+
+            </div>
+        </div>
+        <div class="details">
+            <div class="DivImgGoogle">
+                <img src="../images/LocationTemplate/scb.png" />
+
+
+            </div>
+
+            <div class="DivName">
+                Amnat Charoen
+                    <img src="../images/LocationTemplate/google-map.gif" />
+            </div>
+            <div class="DivAddress">
+                163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua 
+Wattana Bangkok Thailand 10110 
+Tel: 0-2260-0546, 0-2260-0548
+Fax: 0-2260-0549
+            </div>
+            <div class="DivOpeningHours">Mon-Fri 8.30-17.30</div>
+            <div class="DivServicesavaliable">
+                <img src="../images/LocationTemplate/atm.gif" /><img src="../images/LocationTemplate/Branch.gif" />
+                <img src="../images/LocationTemplate/BualuangExclusive.gif" /><img src="../images/LocationTemplate/BusinessCenter.gif" /><img src="../images/LocationTemplate/FCDService.gif" /><img src="../images/LocationTemplate/FXBooth.gif" />
+                <img src="../images/LocationTemplate/RemittanceService.gif" /><img src="../images/LocationTemplate/WesternUnionService.gif" />
+
+            </div>
+        </div>
+        <div class="details">
+            <div class="DivImgGoogle">
+
+                <img src="../images/LocationTemplate/tmb.png" />
+
+            </div>
+
+            <div class="DivName">
+                Amnat Charoen
+                    <img src="../images/LocationTemplate/google-map.gif" />
+            </div>
+            <div class="DivAddress">
+                163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua 
+Wattana Bangkok Thailand 10110 
+Tel: 0-2260-0546, 0-2260-0548
+Fax: 0-2260-0549
+            </div>
+            <div class="DivOpeningHours">Mon-Fri 8.30-17.30</div>
+            <div class="DivServicesavaliable">
+                <img src="../images/LocationTemplate/atm.gif" /><img src="../images/LocationTemplate/Branch.gif" />
+                <img src="../images/LocationTemplate/BualuangExclusive.gif" /><img src="../images/LocationTemplate/BusinessCenter.gif" /><img src="../images/LocationTemplate/FCDService.gif" /><img src="../images/LocationTemplate/FXBooth.gif" />
+                <img src="../images/LocationTemplate/RemittanceService.gif" /><img src="../images/LocationTemplate/WesternUnionService.gif" />
+
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="DivImgGoogle">
+                <img src="../images/LocationTemplate/bay.png" />
+
+
+            </div>
+
+            <div class="DivName">
+                Amnat Charoen
+                    <img src="../images/LocationTemplate/google-map.gif" />
+            </div>
+            <div class="DivAddress">
+                163, 1st Floor Ratchataphak Building Sukhumvit 21 (Asoke) Road Khlongtoei Nua 
+Wattana Bangkok Thailand 10110 
+Tel: 0-2260-0546, 0-2260-0548
+Fax: 0-2260-0549
+            </div>
+            <div class="DivOpeningHours">Mon-Fri 8.30-17.30</div>
+            <div class="DivServicesavaliable">
+                <img src="../images/LocationTemplate/atm.gif" /><img src="../images/LocationTemplate/Branch.gif" />
+                <img src="../images/LocationTemplate/BualuangExclusive.gif" /><img src="../images/LocationTemplate/BusinessCenter.gif" /><img src="../images/LocationTemplate/FCDService.gif" /><img src="../images/LocationTemplate/FXBooth.gif" />
+                <img src="../images/LocationTemplate/RemittanceService.gif" /><img src="../images/LocationTemplate/WesternUnionService.gif" />
+
+            </div>
+        </div>
+
+
+    </div>
+        <div id="divLoadMore">
+
+            <div id="DivMoreButtom">more</div>
+        </div>
+     <iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http://www.website.com/product/75&send=false&layout=button_count&width=85&show_faces=false&action=like&colorscheme=light&height=21' style="height: 22px"></iframe>
+
+</body>
+</html>
+
+
+<!--<script type="text/html" id="TemplateResultsTable">
+{#template MAIN}
+  <div id ="DivMetro">
+ {#for index = 1 to 10}  
+      
+  <div id="DivMetro{$T.index}" ><img src="../images/Metro/{$T.index}.jpg" /></div> 
+ 
+   
+   {#/for}
+</div>
+{#/template MAIN}
+
+ 
+</script>-->

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+   <!--   <div id="divMenuCat">
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox"  value="bature" />
+                    <span>ธรรมชาติ (Nature)</span>
+                </label>
+
+            </li>
+              <li>
+                <label>
+                    <input type="checkbox"  value="bature" />
+                    <span>nature</span>
+                </label>
+
+            </li>
+                   <li>
+                <label>
+                    <input type="checkbox"  value="bature" />
+                    <span>nature</span>
+                </label>
+
+            </li>
+                   <li>
+                <label>
+                    <input type="checkbox"  value="bature" />
+                    <span>nature</span>
+                </label>
+
+            </li>
+                   <li>
+                <label>
+                    <input type="checkbox"  value="bature" />
+                    <span>nature</span>
+                </label>
+
+            </li>
+        </ul>
+
+    </div>-->
+
+</body>
+</html>
+
+
+
+
+<script type="text/html" id="TemplateResultsTable">
+    {#template MAIN}
+     <ul>
+
+          <li>
+                <label>
+                    <input id="checkAll" type="checkbox"  value="0"  checked="checked"/>
+                    <span>ทั้งหมด</span>
+                </label>
+          
+            </li>
+       
+    
+      {#foreach $T.data as record} 
+      
+ 
+            <li>
+                <label>
+                    <input type="checkbox"  value="{$T.record.cat}"  checked="checked"/>
+                    <span>{$T.record.catname_thai}</span>
+                </label>
+          
+            </li>
+       
+    
+
+      {#/for}
+    </ul>
+    {#/template MAIN}
+
+ 
+ 
+</script>

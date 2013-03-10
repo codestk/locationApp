@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+<script type="text/html" id="TemplateResultsTable">
+    {#template MAIN}
+
+  <span id="sp0" class="DivFilter_color_item "><span style="background-image: url('../icon/AllColors.png');background-repeat: no-repeat;"  >&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+  {#foreach $T.data as record} 
+
+  <span class="DivFilter_color_item" id="sp{$T.record.colorid}"  ><span style="background:{$T.record.colorHtml}">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /></span>
+    
+
+  {#/for}
+     
+ 
+
+    {#/template MAIN}
+
+ 
+ 
+</script>
