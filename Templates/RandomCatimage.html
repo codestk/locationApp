@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../css/StyleSheet.css" rel="stylesheet" />
+    <link href="../css/RandomImage.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="DivLogoCat">
+        <div class="HeadCatText">Nature</div>
+        <div class="HeadSubCatText">Sub</div>
+        <div class="DivRandomblockImage Set1_1 catShadow100">
+      <div style="position:absolute;float:left;">1</div>
+      <img src="/ImageHandler.ashx?name=0001_nature_beach_1200_1600&amp;size=Thumbnail&amp;H=60&amp;W=80">
+        </div>
+    
+        <div class="DivRandomblockImage Set1_2 catShadow100">
+        2
+        </div>
+        
+        <div class="DivRandomblockImage Set1_3 catShadow100">
+           3
+        </div>
+         
+        <div class="DivRandomblockImage Set1_4 catShadow100">
+            4
+        </div>
+         
+        <div class="DivRandomblockImage Set1_5 catShadow100">
+          5
+        </div>
+         <div class="DivRandomblockImage Set1_6 catShadow100">
+          6
+         </div>
+   
+      
+        
+      
+    </div>
+                
+      
+    </body>
+</html>
+
+<script type="text/html" id="TemplateResultsTable">
+    {#template MAIN}
+    {#param name=x value=1}
+ 
+  <div id="DivLogoCat">
+      <div class="HeadCatText">{$T.Head}</div>
+       {#if $T.subname != ''}
+      <div class="HeadSubCatText">{$T.subname}</div>
+        {#/if}
+      {#foreach $T.data as record} 
+        {#if $P.x <= 6}   
+    
+         
+         
+        <!--{#if $P.x == "5"}   -->
+     
+       <!-- {#else}
+         <div class="DivblockImage Set1_{$P.x}">
+        {#/if}-->
+
+       <div class="DivRandomblockImage Set{$T.CssSet}_{$P.x} catShadow100">
+            <div style="position:absolute;float:left;color:#fff;padding-left:3px;">{$P.x}</div>
+       {#param name=x value=$P.x+1}
+                 
+           <a class="showpic" href="/ImageHandler.ashx?name={$T.record.name}&size=Full" rel="<b>{$T.record.title}</b> {$T.record.height}x{$T.record.width}<br> {$T.record.dec}">               
+       <img src="/ImageHandler.ashx?name={$T.record.name}&size=Thumbnail&H=60&W=80"/>
+                  </a>
+       </div>
+  
+ 
+             {#/if}
+      {#/for}
+
+
+   </div>
+    
+    {#/template MAIN}
+
+ 
+ 
+</script>

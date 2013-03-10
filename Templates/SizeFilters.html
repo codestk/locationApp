@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!--<div id="DivFilter_Size">
+                    <div class="DivFilter_Head">
+                        ขนาด 
+                           <div id="DivFilter_Size_Show" class="DivFilter_Show">-</div>
+
+                    </div>
+                    <div id="DivFilter_Size_detail" class="DivFilter_detail">
+
+                        <div>1280 x 1393</div>
+                            <div>1280 x 1393</div>
+                            <div>1280 x 1393</div>
+                            <div>1280 x 1393</div>
+                            <div>1280 x 1393</div>
+                            <div>1280 x 1393</div>
+       <div><span>W:</span><span><input type="text" id="name" class="input"  maxlength="7"  autocomplete="off" onkeypress="return isNumberKey(event)" /> Px</span></div>
+       <div><span>H:</span><span><input type="text" id="password" class="input" maxlength="7"  autocomplete="off" onkeypress="return isNumberKey(event)" /> Px</span></div>
+       <div><input  id="btnFilterSize" value="กรอง" class="subbutton" type="button"   /></div> 
+         
+                    </div>
+                </div>-->
+</body>
+</html>
+
+
+
+<script type="text/html" id="TemplateResultsTable">
+    {#template MAIN}
+
+  <div class="DivFilter_Head">
+                        Size 
+                           <div id="DivFilter_Size_Show" class="DivFilter_Show"> </div>
+
+                    </div>
+                    <div id="DivFilter_Size_detail" class="DivFilter_detail">
+                          <div  class="DivFilter_Size_item">All x All</div>
+      {#foreach $T.data as record} 
+   <div  class="DivFilter_Size_item">{$T.record.height} x {$T.record.width}</div> 
+       <!--  <div><a href="#" title="{$T.record.height} {$T.record.width}" class="DivFilter_Size_item">{$T.record.height} x {$T.record.width}</a></div>-->
+
+      {#/for}
+     
+      </div>
+                </div>
+
+    {#/template MAIN}
+
+ 
+ 
+</script>
